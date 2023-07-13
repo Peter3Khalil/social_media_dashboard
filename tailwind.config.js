@@ -6,33 +6,32 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    backgroundColor: {
-      facebook: "var(--facebook)",
-      twitter: "var(--twitter)",
-      youtube: "var(--youtube)",
-      light: {
-        "main-bg": "var(--white)",
-        "top-bg": "var(--very-pale-blue)",
-        "card-bg": "var(--light-grayish-blue)",
+    colors:{
+      "lime-green":"var(--lime-green)",
+      "bright-red":"var(--bright-red)",
+      "facebook":"var(--facebook)",
+      "twitter":"var(--twitter)",
+      "instagram-from":"var(--instagram-from)",
+      "instagram-to":"var(--instagram-to)",
+      "youtube":"var(--youtube)",
+      "toggle-from":"var(--toggle-from)",
+      "toggle-to":"var(--toggle-to)",
+      "toggle-light":"var(--toggle-light)",
+      dark:{
+        "main-bg":"var(--very-dark-blue)",
+        "top-bg":"var(--very-dark-blue-top)",
+        "card-bg":"var(--dark-desaturated-blue)",
+        "text-1":"var(--desaturated-blue)",
+        "text-2":"var(--white)",
       },
-      dark: {
-        "main-bg": "var(--very-dark-blue)",
-        "top-bg": "var(--very-dark-blue-top)",
-        "card-bg": "var(--dark-desaturated-blue)",
-      },
-    },
-    textColor: {
-      dark: {
-        "text-1": "var(--white)",
-        "text-2": "var(--desaturated-blue)",
-      },
-    },
-    colors: {
-      "instagram-from": "var(--instagram-from)",
-      "instagram-to": "var(--instagram-to)",
-      "toggle-from": "var(--toggle-from)",
-      "toggle-to": "var(--toggle-to)",
-    },
+      light:{
+        "main-bg":"var(--white)",
+        "top-bg":"var(--very-pale-blue)",
+        "card-bg":"var(--light-grayish-blue)",
+        "text-1":"var(--dark-grayish-blue)",
+        "text-2":"var(--very-dark-blue)",
+      }
+    }
   },
   darkMode: ["class"],
   plugins: [],

@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { useState } from 'react';
 export default function App({ Component, pageProps }: AppProps) {
-  const [mode, setMode] = useState("dark");
+  const [mode, setMode] = useState("");
   const handleMode = () => {
     setMode(mode => mode === "dark" ? "" : "dark")
   }

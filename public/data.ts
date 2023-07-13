@@ -15,12 +15,12 @@ export const data = [
     overview: [
       {
         name: "page views",
-        views: 100,
+        amount: 100,
         change: 13,
       },
       {
         name: "likes",
-        views: 1500,
+        amount: 1500,
         change: 200,
       },
     ],
@@ -37,12 +37,12 @@ export const data = [
     overview: [
         {
           name: "retweets",
-          views: 150,
+          amount: 150,
           change: 50,
         },
         {
           name: "likes",
-          views: 500,
+          amount: 500,
           change: 30,
         },
       ],
@@ -59,12 +59,12 @@ export const data = [
     overview: [
         {
           name: "profile views",
-          views: 100000,
+          amount: 100000,
           change: 1050,
         },
         {
           name: "likes",
-          views: 5200,
+          amount: 5200,
           change: 300,
         },
       ],
@@ -81,12 +81,12 @@ export const data = [
     overview: [
         {
           name: "total views",
-          views: 50600,
+          amount: 50600,
           change: -18,
         },
         {
           name: "likes",
-          views: 8000,
+          amount: 8000,
           change: -8,
         },
       ],
