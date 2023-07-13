@@ -1,7 +1,17 @@
-import React from 'react'
+import React, { FC } from 'react'
 import millify from 'millify'
 import classNames from 'classnames';
-const Card = ({name,username,following}) => {
+type FollowingTypes = {
+  name:string;
+  number:number;
+  change:number;
+}
+type PropsTypes={
+  name:string;
+  username:string;
+  following:FollowingTypes;
+}
+const Card:FC<PropsTypes> = ({name,username,following}) => {
   const myClassName = classNames("w-full h-2 rounded-ss-lg rounded-se-lg",{
     "bg-facebook": name==="facebook",
     "bg-twitter": name==="twitter",

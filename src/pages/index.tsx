@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { FC, useEffect, useState } from 'react'
 import Card from '../../components/Card'
 import OverviewCard from '../../components/OverviewCard'
 import { data } from '../../public/data'
-const Home = ({handleMode}) => {
+type HomeProps = {
+  handleMode :()=>void;
+}
+const Home :FC<HomeProps>= ({handleMode}) => {
   const [totalFollowers,setTotalFollowers] = useState(0)
   useEffect(()=>{
     let temp = 0;

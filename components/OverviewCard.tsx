@@ -1,7 +1,13 @@
 import millify from 'millify'
 import React from 'react'
-
-const OverviewCard = ({name,amount,change,logo}) => {
+import { FC } from "react";
+type OverviewProps = {
+  name:string;
+  amount:number;
+  change:number;
+  logo:string;
+}
+const OverviewCard:FC<OverviewProps> = ({name,amount,change,logo}) => {
   return (
     <div className={`
     w-full
